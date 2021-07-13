@@ -30,13 +30,7 @@ Future<void> GetImagesFromGallery() async {
     print(ex.message);
   }
 }
-// void ResetVaribles(int counter,int numofimages,List croppedImages,int indexoflastimage){
-//   counter = 0;
-//   numofimages = -1;
-//   resetPaths();
-//   croppedImages = [];
-//   indexoflastimage = 0;
-// }
+
 Future<File>GetCroppedImage(String newfile)async{
   return await ImageCropper.cropImage(
     sourcePath: newfile,
